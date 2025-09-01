@@ -1,0 +1,9 @@
+/* Uniapp UI 组件库基础样式 */
+
+* {
+  box-sizing: border-box;
+}
+
+/* 按钮组件样式已在 Button.vue 中定义 */
+
+/* 可以在这里添加其他全局样式 */
