@@ -18,7 +18,8 @@
 </template>
 
 <script setup>
-import usePageBack from '@/hooks/usePageBack'
+import { reactive } from 'vue'
+
 defineProps({
   title: {
     type: String,
@@ -46,8 +47,7 @@ info.navWidth = navWidth
 info.navHeight = navHeight
 info.navBottom = navTop + navHeight
 function handleBack() {
-  const { back } = usePageBack()
-  back()
+  uni.navigateBack()
 }
 defineExpose({
   info
