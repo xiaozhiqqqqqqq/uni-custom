@@ -1,6 +1,6 @@
 {
-  "name": "@your-org/uniapp-ui",
-  "version": "1.0.0",
+  "name": "suji-uniapp-ui",
+  "version": "1.0.1",
   "description": "A Vue 3 component library for uni-app",
   "type": "module",
   "main": "./dist/index.umd.js",
@@ -18,16 +18,17 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "build:lib": "vite build --mode lib",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": ">=3.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.5.2",
     "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.91.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.3",
