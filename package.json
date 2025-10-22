@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "A Vue 3 component library for uni-app",
   "type": "module",
-  "main": "./dist/index.umd.js",
+  "main": "./dist/source.cjs",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -12,9 +12,10 @@
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/source.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./components/*": "./dist/components/*"
   },
   "scripts": {
     "dev": "vite",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@types/node": "^20.5.2",
     "@vitejs/plugin-vue": "^4.2.3",
+    "rollup-plugin-copy": "^3.5.0",
     "sass": "^1.91.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",

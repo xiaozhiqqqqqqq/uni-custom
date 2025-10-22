@@ -26,8 +26,8 @@ pnpm add @your-org/uniapp-ui
 
 ```typescript
 import { createApp } from 'vue'
-import UniappUI from '@your-org/uniapp-ui'
-import '@your-org/uniapp-ui/style.css'
+import UniappUI from 'suji-uniapp-ui'
+import 'suji-uniapp-ui/style.css'
 
 const app = createApp(App)
 app.use(UniappUI)
@@ -36,8 +36,8 @@ app.use(UniappUI)
 ### 按需引入
 
 ```typescript
-import { Button, Dot, CustomCheck, CustomHeader, CustomSwitch } from '@your-org/uniapp-ui'
-import '@your-org/uniapp-ui/style.css'
+import { Button, Dot, CustomCheck, CustomHeader, CustomSwitch } from 'suji-uniapp-ui'
+import 'suji-uniapp-ui/style.css'
 ```
 
 ### 组件使用
@@ -50,7 +50,7 @@ import '@your-org/uniapp-ui/style.css'
 </template>
 
 <script setup>
-import { Button } from '@your-org/uniapp-ui'
+import { Button } from 'suji-uniapp-ui'
 
 const handleClick = () => {
   console.log('Button clicked!')

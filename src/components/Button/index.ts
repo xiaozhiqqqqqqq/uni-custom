@@ -1,4 +1,4 @@
-import Button from './Button.vue'
+import Button from './index.vue'
 
 // 组件属性类型定义
 export interface ButtonProps {

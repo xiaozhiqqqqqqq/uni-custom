@@ -3,7 +3,7 @@
 ## 1. 安装组件库
 
 ```bash
-npm install @your-org/uniapp-ui
+npm install suji-uniapp-ui
 # 或者从本地安装（用于测试）
 npm pack
 npm install your-org-uniapp-ui-1.0.0.tgz
@@ -16,8 +16,8 @@ npm install your-org-uniapp-ui-1.0.0.tgz
 ```javascript
 // main.js
 import { createApp } from 'vue'
-import UniappUI from '@your-org/uniapp-ui'
-import '@your-org/uniapp-ui/style.css'
+import UniappUI from 'suji-uniapp-ui'
+import 'suji-uniapp-ui/style.css'
 
 const app = createApp(App)
 app.use(UniappUI)
@@ -28,8 +28,12 @@ app.mount('#app')
 
 ```javascript
 // 单个组件引入
-import { Button, Dot, CustomToast, CustomTip, CustomCheck, CustomHeader, CustomSwitch } from '@your-org/uniapp-ui'
-import '@your-org/uniapp-ui/style.css'
+import { Button, Dot, CustomToast, CustomTip, CustomCheck, CustomHeader, CustomSwitch } from 'suji-uniapp-ui'
+import 'suji-uniapp-ui/style.css'
+
+// 直接引入 .vue（components 子路径）
+import ButtonVue from 'suji-uniapp-ui/components/Button/index.vue'
+import DotVue from 'suji-uniapp-ui/components/Dot/index.vue'
 ```
 
 ### 在组件中使用
@@ -301,8 +305,8 @@ const beforeChangeHandler = () => {
 ```javascript
 // main.js
 import { createSSRApp } from 'vue'
-import UniappUI from '@your-org/uniapp-ui'
-import '@your-org/uniapp-ui/style.css'
+import UniappUI from 'suji-uniapp-ui'
+import 'suji-uniapp-ui/style.css'
 
 export function createApp() {
   const app = createSSRApp(App)
@@ -318,8 +322,8 @@ export function createApp() {
 <html>
 <head>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="https://unpkg.com/@your-org/uniapp-ui/dist/index.umd.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/@your-org/uniapp-ui/dist/style.css">
+  <script src="https://unpkg.com/suji-uniapp-ui/dist/index.umd.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/suji-uniapp-ui/dist/style.css">
 </head>
 <body>
   <div id="app">
