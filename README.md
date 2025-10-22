@@ -13,11 +13,11 @@
 ## 安装
 
 ```bash
-npm install @your-org/uniapp-ui
+npm install suji-uniapp-ui
 # 或
-yarn add @your-org/uniapp-ui
+yarn add suji-uniapp-ui
 # 或
-pnpm add @your-org/uniapp-ui
+pnpm add suji-uniapp-ui
 ```
 
 ## 使用

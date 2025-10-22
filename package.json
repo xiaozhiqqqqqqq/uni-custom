@@ -1,6 +1,6 @@
 {
   "name": "suji-uniapp-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vue 3 component library for uni-app",
   "type": "module",
   "main": "./dist/source.cjs",
